@@ -1,8 +1,8 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 
-from html_content import html_content
 from settings import hostName, serverPort
+from utils import index_html_content
 
 
 class MyServer(BaseHTTPRequestHandler):
@@ -10,7 +10,7 @@ class MyServer(BaseHTTPRequestHandler):
 
     def __get_html_content(self):
         """Метод получения html страницы"""
-        return html_content
+        return index_html_content()
 
     def do_GET(self):
         """ Метод для обработки входящих GET-запросов """
