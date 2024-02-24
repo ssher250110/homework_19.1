@@ -258,7 +258,7 @@
 
     <div class="b-example-divider"></div>
 
-    <div class="container">
+    <div class="container overflow-auto">
         <header>
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal text-body-emphasis">Главная</h1>
@@ -380,36 +380,65 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        </tbody>
-                    </table>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="col">
+                    <div class="card rounded-3">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Номер</th>
+                                <th scope="col">Название товара</th>
+                                <th scope="col">Цена за штуку(тыс. руб.)</th>
+                                <th scope="col">Количество(шт.)</th>
+                                <th scope="col">Итоговая сумма(тыс. руб.)</th>
+                                <th scope="col">Статус</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="table-warning">
+                                <th scope="row">1</th>
+                                <td>Смартфон</td>
+                                <td>85 000</td>
+                                <td>25</td>
+                                <td>2 125 000</td>
+                                <td>Обработка</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <th scope="row">2</th>
+                                <td>Ноутбук</td>
+                                <td>130 000</td>
+                                <td>10</td>
+                                <td>1 300 000</td>
+                                <td>Новый</td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">3</th>
+                                <td>Наушники</td>
+                                <td>16 000</td>
+                                <td>20</td>
+                                <td>320 000</td>
+                                <td>Обработан</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <th scope="row">4</th>
+                                <td>Клавиатура</td>
+                                <td>25 000</td>
+                                <td>5</td>
+                                <td>125 000</td>
+                                <td>Обработка</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">5</th>
+                                <td>Мышка</td>
+                                <td>2 500</td>
+                                <td>50</td>
+                                <td>125 000</td>
+                                <td>Отмена</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
